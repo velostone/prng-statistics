@@ -1,0 +1,40 @@
+RNG_test using PractRand version 0.94
+RNG = xoshiro256plusplus, seed = 20260416
+test set = core, folding = standard (64 bit)
+
+rng=xoshiro256plusplus, seed=20260416
+length= 256 megabytes (2^28 bytes), time= 3.5 seconds
+  no anomalies in 210 test result(s)
+
+rng=xoshiro256plusplus, seed=20260416
+length= 512 megabytes (2^29 bytes), time= 7.5 seconds
+  no anomalies in 226 test result(s)
+
+rng=xoshiro256plusplus, seed=20260416
+length= 1 gigabyte (2^30 bytes), time= 14.9 seconds
+  no anomalies in 243 test result(s)
+
+rng=xoshiro256plusplus, seed=20260416
+length= 2 gigabytes (2^31 bytes), time= 28.9 seconds
+  no anomalies in 261 test result(s)
+
+rng=xoshiro256plusplus, seed=20260416
+length= 4 gigabytes (2^32 bytes), time= 56.0 seconds
+  no anomalies in 277 test result(s)
+
+rng=xoshiro256plusplus, seed=20260416
+length= 8 gigabytes (2^33 bytes), time= 111 seconds
+  no anomalies in 294 test result(s)
+
+rng=xoshiro256plusplus, seed=20260416
+length= 16 gigabytes (2^34 bytes), time= 221 seconds
+  no anomalies in 310 test result(s)
+
+rng=xoshiro256plusplus, seed=20260416
+length= 32 gigabytes (2^35 bytes), time= 440 seconds
+  no anomalies in 325 test result(s)
+
+rng=xoshiro256plusplus, seed=20260416
+length= 64 gigabytes (2^36 bytes), time= 881 seconds
+  no anomalies in 340 test result(s)
+
