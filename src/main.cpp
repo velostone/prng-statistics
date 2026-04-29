@@ -12,6 +12,7 @@
 #include "util.hpp"
 #include "xoshiro256plus.hpp"
 #include "xoshiro256plusplus.hpp"
+#include "xoshiro128plus.hpp"
 
 constexpr int seed = 20260416;
 
@@ -69,6 +70,14 @@ int main(int argc, char* argv[]) {
         boost::random::mt11213b mt11213b(seed);
         while (true) {
             std::uint64_t x = mt11213b();
+            std::cout.write(reinterpret_cast<char*>(&x), sizeof(x));
+        }
+      }
+
+      case util::RngType::XOSHIRO128P: {
+        XoShiRo128Plus xoshiro(seed);
+        while (true) {
+            std::uint32_t x = xoshiro();
             std::cout.write(reinterpret_cast<char*>(&x), sizeof(x));
         }
       }

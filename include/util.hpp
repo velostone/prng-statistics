@@ -10,6 +10,7 @@ namespace util {
       TAUS88,
       XOSHIRO256P,
       XOSHIRO256PP,
+      XOSHIRO128P,
       UNKNOWN
   };
 
@@ -20,6 +21,7 @@ namespace util {
       if (name == "taus88") return RngType::TAUS88;
       if (name == "xoshiro256+") return RngType::XOSHIRO256P;
       if (name == "xoshiro256++") return RngType::XOSHIRO256PP;
+      if (name == "xoshiro128+") return RngType::XOSHIRO128P;
       return RngType::UNKNOWN;
   }
 } // namespace util
